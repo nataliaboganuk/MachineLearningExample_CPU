@@ -1,6 +1,6 @@
 # UK Student Attainment Predictor — MLOps Pipeline
 
-This project delivers a full end‑to‑end machine‑learning pipeline that trains a Logistic Regression model to predict a 6th‑form student’s A‑Level Maths grade based on their prior attainment, including SATS scores, GCSE grades, and GCE AS‑level results. The trained model is then deployed for live inference using NVIDIA Triton Inference Server running on a local Kubernetes cluster.
+This project delivers a full end‑to‑end machine‑learning pipeline that trains a Logistic Regression model to predict a 6th‑form student’s the A‑Level Maths grade, based on their prior attainment, including SATS scores, GCSE grades, and GCE AS‑level results. The trained model is then deployed for live inference using NVIDIA Triton Inference Server running on a local Kubernetes cluster.
 
 To support the model the dataset of 10,000 rows of purely synthetic student data. (The dataset included in this repo was generated using synthetic_uk_attainment_10000.ipynb. It is pre-built and ready to use — no generation step is required.) The dataset reflects UK national averages for 2024/25, using normally distributed values for SATS (80–120), GCSE grades (1–9), and GCE AS grades (A–U). Each record also includes an A-Level grade is generated independently during synthetic data creation and then used as the training label. All generated data is saved as a raw CSV file.
 
